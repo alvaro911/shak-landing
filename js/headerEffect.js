@@ -35,6 +35,5 @@
         // });
       }
     });
-  console.log(headline);
   setTimeout(() => { segmenter.OnReady }, 5000);
 })();
