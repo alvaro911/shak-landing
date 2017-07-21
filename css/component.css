@@ -119,23 +119,22 @@ MENU STYLING
 
 /* Zeru */
 .tabsnav--zeru {
-	background: #222525;
+	background-color: #001333;
+	color: white;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
 }
 
 .tabsnav--zeru .tabsnav__item:first-child .tabsnav__bar {
-	background: #161919;
-}
-
-.tabsnav--zeru .tabsnav__item:nth-child(2) .tabsnav__bar {
-	background: #222525;
-}
-
-.tabsnav--zeru .tabsnav__item:nth-child(3) .tabsnav__bar {
-	background: #2e3131;
+	background: #001333;
+	color: #4dd2f5;
 }
 
 .tabsnav--zeru .tabsnav__title {
-	color: #fff;
+	color: #4dd2f5;
 }
 
 @media screen and (max-width: 40em) {

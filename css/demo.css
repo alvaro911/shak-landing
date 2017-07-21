@@ -188,6 +188,7 @@ MENU EFFECT STYLING
 .button {
 	border: none;
 	background: none;
+	width: 100px;
 }
 
 .button:focus {

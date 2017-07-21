@@ -36,6 +36,30 @@ h1{
   margin: 1em 0 2em 75px;
 }
 
+.boxset{
+  max-width: 627.188px;
+}
+
+.first{
+  max-width: 576px;
+}
+
+.bluray{
+  max-width: 576px;
+}
+
+.second{
+  max-width: 512px;
+}
+
+.deluxe{
+  max-width: 921.594px;
+}
+
+.third{
+  max-width: 512px;
+}
+
 .product-info article{
   width: 80%;
   margin: 0 0 1em 75px;
@@ -61,12 +85,22 @@ h1{
 
 .btnLink{
   width: 35%;
-height: auto;
-padding: 15px;
-color: black;
-background-color: #a2a2a2;
-text-align: center;
-margin-right: 6px;
+  height: auto;
+  padding: 15px;
+  color: #4dd2f5;
+  background-color: #001333;
+  text-align: center;
+  margin-right: 6px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.btnLink:hover{
+  background-color: #F1D7A0;
+  color: #001333;
 }
 
 .endorsements{
@@ -107,6 +141,7 @@ margin-right: 6px;
 }
 
 .form{
+  border-top: 3px solid #3d2710;
   width: 100%;
   height: auto;
   background-size: cover;
@@ -128,9 +163,12 @@ margin-right: 6px;
   flex-direction: column;
 }
 
+.people{
+  max-width: 403.188px;
+}
+
 .contact-address{
   width: 100%;
-  /*color: black;*/
 }
 
 .contact-address p{
@@ -168,6 +206,8 @@ textarea{
   border: 0;
   width: 25%;
   margin: 15px auto 30px;
+  color: white;
+  background-color: #e6880f;
 }
 
 footer{
@@ -176,4 +216,328 @@ footer{
   width: 100%;
   color: #6e6e6e;
   text-align: center;
+}
+
+/*iphone landscape*/
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  .boxset, .bluray, .deluxe{
+    width: 57%;
+    margin-left: 166px;
+  }
+
+  .product-info article,
+  .product-info .stuff{
+    margin-left: 105px;
+  }
+}
+
+/*ipad portrait*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  .boxset, .bluray, .deluxe, .stuff, .product-info{
+    position: absolute;
+  }
+
+  .boxset{
+    width: 60%;
+    top: -70px;
+    left: -20px;
+  }
+
+  .first{
+    width: 53%;
+    right: 34px;
+    bottom: 190px;
+  }
+
+  .bluray{
+    width: 60%;
+    right: 50px;
+  }
+
+  .second{
+    width: 30%;
+    bottom: 160px;
+  }
+
+  .link-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .link-second .btnLink{
+    width: 70%;
+    margin: 15px auto;
+  }
+
+  .deluxe{
+    width: 82%;
+    bottom: 100px;
+  }
+
+  .third{
+    width: 50%;
+    text-align: right;
+    right: 60px;
+  }
+
+  .endorsement-holder{
+    display: flex;
+    width: 75%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .people{
+    display: block;
+    width: 42%;
+  }
+
+  .endorsement{
+    width: 50%;
+  }
+}
+
+/*iPad landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  .boxset, .bluray, .deluxe, .stuff, .product-info{
+    position: absolute;
+  }
+
+  .boxset{
+    width: 65%;
+    top: -110px;
+    left: -70px;
+  }
+
+  .first{
+    width: 47%;
+    right: 20px;
+    bottom: 150px;
+  }
+
+  .bluray{
+    width: 54%;
+    right: 30px;
+  }
+
+  .second{
+    width: 40%;
+    top: 145px;
+  }
+
+  .deluxe{
+    bottom: 40px;
+    width: 79%;
+  }
+
+  .third{
+    width: 40%;
+    right: 60px;
+  }
+
+  .endorsements .swiper-slide {
+    width: 100%;
+    height: 26em;
+  }
+
+  .endorsement-holder{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .people{
+    display: block;
+    width: 42%;
+  }
+
+  .endorsement{
+    width: 50%;
+  }
+
+  .contact {
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait){
+  .boxset, .bluray, .deluxe, .stuff, .product-info{
+    position: absolute;
+  }
+
+  .first{
+    width: 45%;
+  }
+
+  .deluxe{
+    width: 75%;
+  }
+
+  .third{
+    width: 40%;
+    right: 30px;
+  }
+
+  .endorsement-holder{
+    margin: 0 auto;
+  }
+
+  .endorsements .swiper-slide{
+    height: 24rem;
+  }
+
+  .contact {
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+  .boxset, .bluray, .deluxe, .stuff, .product-info{
+    position: absolute;
+  }
+
+  .boxset{
+    width: 49%;
+    top: -109px;
+    left: 50px;
+  }
+
+  .first{
+    width: 45%;
+    right: 0;
+  }
+
+  .bluray{
+    width: 45%;
+    top: -22px;
+    right: 90px;
+  }
+
+  .second{
+    width: 40%;
+    left: 50px;
+    top: 140px;
+  }
+
+  .deluxe{
+    width: 72%;
+    bottom: 0;
+  }
+
+  .third{
+    width: 40%;
+    right: 30px;
+  }
+
+  .endorsements .swiper-slide{
+    height: 29rem;
+  }
+
+  .endorsement-holder{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .people{
+    display: block;
+    width: 42%;
+  }
+
+  .endorsement{
+    width: 50%;
+  }
+
+  .contact {
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1367px) {
+  .boxset, .bluray, .deluxe, .stuff, .product-info{
+    position: absolute;
+  }
+
+  .boxset{
+    width: 49%;
+    top: -109px;
+    left: 50px;
+  }
+
+  .first{
+    width: 45%;
+    right: 0;
+  }
+
+  .bluray{
+    width: 45%;
+    top: -22px;
+    right: 90px;
+  }
+
+  .second{
+    width: 40%;
+    left: 7%;
+    top: 140px;
+  }
+
+  .deluxe{
+    width: 72%;
+    bottom: 0;
+  }
+
+  .third{
+    width: 40%;
+    right: 6%;
+  }
+
+  .endorsements .swiper-slide{
+    height: 29rem;
+  }
+
+  .endorsement-holder{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .people{
+    display: block;
+    width: 42%;
+  }
+
+  .endorsement{
+    width: 50%;
+  }
+
+  .contact {
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
 }
