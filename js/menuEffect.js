@@ -24,6 +24,7 @@
 		// The content items and the back control.
 		contentItems = [].slice.call(document.querySelectorAll('.tabscontent > .tabscontent__item')),
 		backCtrl = document.querySelector('.tabscontent > button.button--back'),
+		tabsItem = document.querySelector('.tabscontent__item'),
 		// menu ctrl for smaller screens (the tabs are not initially shown and toggling this button will show/hide the tabs)
 		isContentShown = false, current;
 
@@ -63,6 +64,7 @@
 	}
 
 	backCtrl.addEventListener('click', closeTabs);
+	tabsItem.addEventListener('click', closeTabs);
 
 	function closeTabs() {
 		if( !tnav.isOpen ) return;

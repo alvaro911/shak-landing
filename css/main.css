@@ -7,6 +7,14 @@ img{
   width: 100%;
   height: auto;
   background-color: white;
+  overflow: auto;
+}
+
+h1{
+  font-family: 'Libre Bask';
+  font-size: 32px;
+  margin-left: 75px;
+  color: black;
 }
 
 .swiper-container{
@@ -25,7 +33,7 @@ img{
 
 .boxset, .bluray, .deluxe{
   width: 80%;
-  margin: 4em 0 2em 75px;
+  margin: 1em 0 2em 75px;
 }
 
 .product-info article{
@@ -35,15 +43,34 @@ img{
   line-height: 1.5;
 }
 
-.product-info a{
+.stuff{
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info span{
   color: rgb(59, 59, 59);
   font-size: 25px;
-  margin-left: 75px;
   text-align: center;
   font-family: 'Libre Bask', serif;
 }
 
+.btnLink{
+  width: 35%;
+height: auto;
+padding: 15px;
+color: black;
+background-color: #a2a2a2;
+text-align: center;
+margin-right: 6px;
+}
+
 .endorsements{
+  overflow: auto;
   background-color: white;
   width: 100%;
   height: auto;
@@ -77,4 +104,76 @@ img{
 
 .endorsement h4{
   margin: 0 0 10px;
+}
+
+.form{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+  color: #3d2710;
+}
+
+.form h1{
+  color: #3d2710;
+}
+
+.contact{
+  width: 80%;
+  height: auto;
+  margin-left: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-address{
+  width: 100%;
+  /*color: black;*/
+}
+
+.contact-address p{
+  line-height: 1.6;
+}
+
+.contact-form{
+  width: 100%;
+  height: auto;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  margin-bottom: 10px;
+}
+
+input, textarea{
+  margin-bottom: 15px;
+}
+
+input, textarea{
+  padding: 5px;
+  font-size: 16px;
+}
+
+textarea{
+  height: 180px;
+}
+
+.submit{
+  border: 0;
+  width: 25%;
+  margin: 15px auto 30px;
+}
+
+footer{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  color: #6e6e6e;
+  text-align: center;
 }

@@ -62,7 +62,7 @@ MENU STYLING
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: 10;
 }
 
 .tabsnav--hidden {
@@ -142,5 +142,11 @@ MENU STYLING
 	/* don't show a background if on mobile */
 	.tabsnav {
 		background: none;
+	}
+}
+
+@media (min-width:375px) and (max-width: 667px) and (orientation: landscape) {
+	.boxset{
+		width: 55%;
 	}
 }

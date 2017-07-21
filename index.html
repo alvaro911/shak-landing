@@ -32,7 +32,7 @@
 		<div class="tabscontent">
 			<div class="tabscontent__item">
 				<div class="column">
-					<h4 class="column__text"><a href="#">Home</a></h4>
+					<h4 class="column__text"><a href="#segmenter">Home</a></h4>
 					<h4 class="column__text"><a href="#">Movie</a></h4>
 					<h4 class="column__text"><a href="#">Blog</a></h4>
 					<h4 class="column__text"><a href="#store">Store</a></h4>
@@ -41,21 +41,22 @@
 				<div class="column">
 					<h4 class="column__text"><a href="#">Order Now</a></h4>
 					<h4 class="column__text"><a href="#">Look Inside</a></h4>
-					<h4 class="column__text"><a href="#">Endorsements</a></h4>
-					<h4 class="column__text"><a href="#">Contact</a></h4>
+					<h4 class="column__text"><a href="#endorsements">Endorsements</a></h4>
+					<h4 class="column__text"><a href="#form">Contact</a></h4>
 				</div>
 			</div>
 			<button class="button button--back"><svg class="icon icon--caret"><use xlink:href="#icon-caret"></use></svg></button>
 		</div> <!-- End Menu -->
 		<!-- Hero image -->
-		<div class="segmenter" style="background-image: url(img/tsbg.jpg)"></div>
+		<div id="segmenter" class="segmenter" style="background-image: url(img/tsbg.jpg)"></div>
 		<h2 class="trigger-headline trigger-headline--hidden">
 			<span>T</span><span>h</span><span>e</span><span></span>
 			<span>S</span><span>h</span><span>a</span><span>c</span><span>k</span>
 		</h2> <!-- End hero image -->
 
-		<!-- Swipe effect -->
+		<!-- Store -->
 		<div id="store" class="store">
+			<h1>Store</h1>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -66,7 +67,10 @@
 							<article>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac condimentum metus, id aliquet diam. Nullam quis felis sapien. Phasellus at metus convallis, viverra arcu sed, tristique mi. Proin purus.
 							</article>
-							<a href="#"><span>$79.00</span></a>
+							<div class="stuff">
+								<span>$79.00</span>
+								<a href="" class="btnLink"><div>Buy Now</div></a>
+							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -77,7 +81,10 @@
 							<article>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac condimentum metus, id aliquet diam. Nullam quis felis sapien. Phasellus at metus convallis, viverra arcu sed, tristique mi. Proin purus.
 							</article>
-							<a href="#"><span>$48.00</span></a>
+							<div class="stuff">
+								<span>$48.00</span>
+								<a href="" class="btnLink"><div>Buy Now</div></a>
+							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -88,7 +95,10 @@
 							<article>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac condimentum metus, id aliquet diam. Nullam quis felis sapien. Phasellus at metus convallis, viverra arcu sed, tristique mi. Proin purus.
 							</article>
-							<a href="#"><span>$65.00</span></a>
+							<div class="stuff">
+								<span>$65.00</span>
+								<a href="" class="btnLink"><div>Buy Now</div></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -97,6 +107,7 @@
 
 		<!-- Endorsements -->
 		<div id="endorsements" class="endorsements">
+			<h1>Endoresements</h1>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -200,6 +211,41 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Form -->
+		<div id="form" class="form" style="background-image: url(img/paper.jpg)">
+			<h1>Contact us</h1>
+			<div class="contact">
+				<div class="contact-address">
+					<h3>Windblown Media</h3>
+					<p>
+						4680 Cale Norte, Newbury Park, CA 91320 <br>
+
+						Phone: 805-498-2484 <br>
+						Fax: 805-499-4260 <br>
+						Email: office@windblownmedia.com <br>
+						Web: Windblown Media <br>
+					</p>
+				</div>
+				<div class="contact-form">
+					<form action="post">
+						<label for="name">Your name (required)</label>
+						<input type="text">
+						<label for="email">Your email (required)</label>
+						<input type="text">
+						<label for="subject">Subject</label>
+						<input type="text">
+						<label for="message">Your Message</label>
+						<textarea name="name"></textarea>
+						<input class="submit" type="submit" name="Submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div> <!-- End form -->
+
+		<footer>
+			<p>All rights reserved</p>
+		</footer>
 
 		<script src="js/anime.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
